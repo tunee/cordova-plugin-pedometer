@@ -56,8 +56,8 @@
                     @"endDate": [NSString stringWithFormat:@"%f", [pedometerData.endDate timeIntervalSince1970] * 1000],
                     @"numberOfSteps": pedometerData.numberOfSteps,
                     @"distance": pedometerData.distance,
-                    @"floorsAscended": pedometerData.floorsAscended,
-                    @"floorsDescended": pedometerData.floorsDescended
+              //      @"floorsAscended": pedometerData.floorsAscended,
+            //        @"floorsDescended": pedometerData.floorsDescended
                 };
                 pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:pedestrianData];
                 [pluginResult setKeepCallbackAsBool:true];
